@@ -222,7 +222,7 @@ void inch()
 */
 
 
-/*Question 5*/
+/*Question 5
 #include<stdio.h>
 int main(){
     int x,y;
@@ -235,3 +235,4 @@ int main(){
     } while (y<x);
     
 }
+*/
