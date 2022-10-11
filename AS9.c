@@ -20,7 +20,6 @@ int main(){
 }
 */
 
-
 /*Question 2
 #include<stdio.h>
 int main(){
@@ -47,7 +46,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*Question 3
 #include<stdio.h>
@@ -77,7 +75,6 @@ int main(){
 }
 */
 
-
 /*Question 4
 #include<stdio.h>
 int main(){
@@ -104,7 +101,6 @@ int main(){
 }
 */
 
-
 /*Question 5
 #include<stdio.h>
 int main(){
@@ -120,7 +116,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*Question 6
 #include<stdio.h>
@@ -142,7 +137,6 @@ int main(){
 
 }
 */
-
 
 /*Question 7
 #include<stdio.h>
@@ -173,7 +167,6 @@ int main(){
 }
 */
 
-
 /*Question 8
 #include<stdio.h>
 int main(){
@@ -186,7 +179,6 @@ int main(){
     return 0;
 }
 */
-
 
 /*Question 9
 #include<stdio.h>
@@ -203,46 +195,52 @@ int main(){
 }
 */
 
-
 /*Question 10*/
-#include<stdio.h>
-int main(){
-    float x,y,z,w,u,v,t,s,r;
+#include <stdio.h>
+int main()
+{
+    float x, y, z, w, u, v, t, s, r;
     printf("Enter the number of units consumed :");
-    scanf("%f",&x);
-    y=0;
-    z=0;
-    w=0;
-    u=0;
-    v=0;
+    scanf("%f", &x);
+    z = 0;
+    w = 0;
+    u = 0;
+    v = 0;
 
-    if (x>50){
-        y=50*0.5;
-        x=x-50;
-        if (x>100){
-        z=100*0.75;
-        x=x-100;
-            if (x>100){
-            w=100*1.2;
-            x=x-100;
-                if (x>0){
-                v=x*1.5;
+    if (x > 50)
+    {
+        y = 50 * 0.5;
+        x = x - 50;
+        if (x > 100)
+        {
+            z = 100 * 0.75;
+            x = x - 100;
+            if (x > 100)
+            {
+                w = 100 * 1.2;
+                x = x - 100;
+                if (x > 0)
+                {
+                    v = x * 1.5;
                 }
             }
-            else {
-            u=x*1.2;
+            else
+            {
+                u = x * 1.2;
             }
-            }
-        else {
-        z=x*0.75;
+        }
+        else
+        {
+            z = x * 0.75;
         }
     }
-    else {
-        y=x*0.5;
+    else
+    {
+        y = x * 0.5;
     }
-    t=y+z+w+u+v;
-    s=t*0.2;
-    r=t+s;
-    printf("The amount of your electricity bill is %f",r);
+    t = y + z + w + u + v;
+    s = t * 0.2;
+    r = t + s;
+    printf("The amount of your electricity bill is %f", r);
     return 0;
 }
