@@ -167,6 +167,7 @@ int main(){
 }
 */
 
+
 /*Question 8
 #include<stdio.h>
 int main(){
@@ -195,7 +196,7 @@ int main(){
 }
 */
 
-/*Question 10*/
+/*Question 10
 #include <stdio.h>
 int main()
 {
@@ -244,3 +245,4 @@ int main()
     printf("The amount of your electricity bill is %f", r);
     return 0;
 }
+*/
