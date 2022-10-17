@@ -49,17 +49,16 @@ Date : 27/09/22
 Aim : complete the assignment
 language : c programming
 */
-/*
+
 #include<stdio.h>
 int main(){
     int x,y,z;
     printf("enter the value of first variable :");
-    scanf("%d"&x);
+    scanf("%d",&x);
     printf("enter the value of second variable :");
-    scanf("%d"&y);
+    scanf("%d",&y);
     printf("enter the value of third variable :");
-    scanf("%d"&z);
+    scanf("%d",&z);
     printf("The value of first variable is %d\nThe value of second variable is %d\nThe value of second variable is %d",x,y,z);
     return 0;
 }
-*/

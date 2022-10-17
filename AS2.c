@@ -89,10 +89,9 @@ Date : 27/09/22
 Aim : complete the assignment
 language : c programming
 */
-/*
 #include<stdio.h>
 int main(){
-    int x,y,z'w;
+    int x,y,z,w;
     x=15;
     y=16;
     z=17;
@@ -100,4 +99,3 @@ int main(){
     printf("Value of first variable is %d\nValue of second variable is %d\nValue of third variable is %d\nValue of fourth variable is %d",x,y,z,w);
     return 0;
 }
-*/

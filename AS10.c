@@ -171,7 +171,7 @@ return 0;
 */
 
 
-/*Question 11
+/*Question 11*/
 #include<stdio.h>
 // Convert Fahrenheit temperature to Celcius equivalents
 int main(){
@@ -185,5 +185,4 @@ celcius = 5/9 * (fahr-32);
 printf("Temperature in Celcius is = %d\n", celcius);
 return 0;
 }
-*/
-//y
+

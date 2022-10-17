@@ -199,7 +199,7 @@ float x ,y ,z;
 */
 
 
-/*Question 10
+/*Question 10*/
 #include<stdio.h>
 int main(){
     int x,y,z;
@@ -218,4 +218,3 @@ int main(){
     return 0;
 
 }
-*/

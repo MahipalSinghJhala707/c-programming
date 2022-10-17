@@ -133,7 +133,7 @@ int main(){
 */
 
 
-/*Question 10
+/*Question 10*/
 #include<stdio.h>
 int main(){
     float x,y,z,w,v,u;
@@ -151,4 +151,3 @@ int main(){
     printf("the percentage marks are %f",y);
     return 0;
 }
-*/

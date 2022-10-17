@@ -116,7 +116,7 @@ int main(){
 */
 
 
-/*Question 10
+/*Question 10*/
 #include<stdio.h>
 int main(){
     float x,y;
@@ -127,4 +127,3 @@ int main(){
     return 0;
 
 }
-*/

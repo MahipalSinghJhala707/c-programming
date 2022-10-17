@@ -217,4 +217,5 @@ int main (){
         printf("The square of %d is %d\n",y,y*y);
         y=y+1;
     }
+    return 0;
 }
