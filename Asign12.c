@@ -189,5 +189,5 @@ int main (){
         printf("The square of %d is %d\n",y,y*y);
     }
     return 0;
-   
+ 
 }
