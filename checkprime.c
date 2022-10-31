@@ -9,7 +9,7 @@ int main() {
   if (x == 0 || x == 1)
     z = 1;
 
-  for (y = 2; y <= x / 2; ++y) {
+  for (y = 2; y < x ; ++y) {
 
 
     if (x % y == 0) {
