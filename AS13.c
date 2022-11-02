@@ -206,10 +206,204 @@ int main(){
 }*/
 
 
-/*Question 5*/
+/*Question 5
 #include<stdio.h>
 
 int main(){
-    int x;
+    int x,y,z,u;
+    printf("\t\t\tMENU \n");
+    printf("1. Check whether a given set of three numbers are lengths of an isosceles triangle or not \n");
+    printf("2. Check whether a given set of three numbers are lengths of sides of a right angled triangle or not \n");
+    printf("3. Check whether a given set of three numbers are equilateral triangle or not \n");
+    printf("4. Exit \n");
+    printf("Enter the choice here : ");
+    scanf("%d",&u);
+    switch (u)
+    {
+    case 1:
+        printf("enter the lenght of first side :");
+        scanf("%d",&x);
+        printf("enter the lenght of second side :");
+        scanf("%d",&y);
+        printf("enter the lenght of third side :");
+        scanf("%d",&z);
+        if (((x+y)>z) && ((x+z)>y) && ((z+y)>x)){
+            if (((x==y) && (x!=z)) || ((x==z) && (x!=y)) || ((y==z) && (y!=x))){
+            printf("Isosceles triangle");
+            }
+            else{
+                printf("the triangle is not isosceles :(");
+            }
+        }
+        else {
+            printf("the triangle is invalid :(");
+        }
+            break;
+    
+    case 2:
+        printf("enter the lenght of hypotnuse :");
+        scanf("%d",&x);
+        printf("enter the lenght of base :");
+        scanf("%d",&y);
+        printf("enter the lenght of perpendicular :");
+        scanf("%d",&z);
+        if (((x+y)>z) && ((x+z)>y) && ((z+y)>x)){
+            if (x*x==(y*y)+(z*z))
+            {
+                printf("Right angled triangle");
+            }
+            else{
+                printf("the triangle is not right angled :(");
+            }
+        }
+        else {
+            printf("the triangle is invalid :(");
+        }
+        break;
+    
+    case 3:
+        printf("enter the lenght of first side :");
+        scanf("%d",&x);
+        printf("enter the lenght of second side :");
+        scanf("%d",&y);
+        printf("enter the lenght of third side :");
+        scanf("%d",&z);
+        if (((x+y)>z) && ((x+z)>y) && ((z+y)>x)){
+            if ((x==y) && (y==x) && (x==z))
+            {
+                printf("Equilateral triangle");
+            }
+            else{
+                printf("the triangle is not equilateral :(");
+            }
+        }
+        else {
+            printf("the triangle is invalid :(");
+        }
+        break;
+    case 4:
+        printf("You are out  of the program ");
+        break;
 
+    default:
+    printf("Invalid input ");
+        break;
+    }
 }
+*/
+
+
+/*Question 6
+#include<stdio.h>
+int main(){
+    int var;
+    printf("Input a variable ");
+    scanf("%d",&var);
+    switch (var){
+        case 1:
+        printf("good");
+        break;
+
+        case 2:
+        printf("better");
+        break;
+
+        case 3:
+        printf("best");
+        break;
+
+        default:
+        printf("invalid");
+        break;
+    }
+}
+*/
+
+
+/*Question 7
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("Enter the year to check if it is leap or not :");
+    scanf("%d",&x);
+    y=x%4;
+    switch (y)
+    {
+    case 0:
+        printf("The entered year is a leap year .");
+        break;
+    
+    default:
+        printf("The entered year is not a leap year .");
+        break;
+    }
+    return 0;
+}
+*/
+
+
+/*Question 8
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("Enter a number ;");
+    scanf("%d",&x);
+    if (x!=0)
+        y=1;
+    switch (y)
+    {
+    case 1:
+        printf("%d",-x);
+        break;
+
+    default:
+        printf("%d",x);
+        break;
+    }
+    return 0;
+}
+*/
+
+
+/*Question 9
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int x,y,z,w,u=2,r1,r2;
+    printf("Enter the coefficient of x^2 :");
+    scanf("%d",&x);
+    printf("Enter the coefficient of x :");
+    scanf("%d",&y);
+    printf("Enter the constant :");
+    scanf("%d",&z);
+    w=(y*y)-(4*x*z);
+    if (w==0){
+        printf("the roots are real and equal :)\n");
+        u=0;
+    }
+    else if(w>0){
+        printf("the roots are real and distinct :|\n");
+        u=1;
+    }
+    else {
+        printf("the roots are imagenary which does not exists sorry :(\n");
+    }
+
+    switch (u)
+    {
+    case 0:
+        r1=((-y)+sqrt(w))/(2*x);
+        r2=((-y)-sqrt(w))/(2*x);
+        printf("The roots are %d , %d",r1,r2);
+        break;
+    
+    case 1:
+        r1=((-y)+sqrt(w))/(2*x);
+        r2=((-y)-sqrt(w))/(2*x);
+        printf("The roots are %d , %d",r1,r2);
+        break;
+    }
+    return 0;
+}
+*/
