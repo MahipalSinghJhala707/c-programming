@@ -462,7 +462,7 @@ int check(int x){
 */
 
 
-//Question 17
+/*Question 17
 #include<stdio.h>
 int fab(int);
 int main(){
@@ -496,6 +496,8 @@ int fab(int z){
         }
     }
 }
+*/
+
 
 /*Question 18
 #include<stdio.h>
