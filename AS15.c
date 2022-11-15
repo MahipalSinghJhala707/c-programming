@@ -186,7 +186,7 @@ int mul(int n,int m){
 
 /*Question 9
 #include<stdio.h>
-int check(int x,int y);
+int check(int,int);
 int main(){
     int num , digit, z;
     printf("Enter the number :");
@@ -204,13 +204,14 @@ int main(){
 
 int check(int x,int y)
 {
-    int v;
-    v=x%10;
-    if (v==y){
-        return 1;
+    while(x>0){
+        int v=x%10;
+        if(v==y){
+            return 1;
+        }
+        x=x/10;
     }
     return 0;
-
 }*/
 
 
