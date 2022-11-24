@@ -366,7 +366,7 @@ int main(){
     }
 
     for(i=0; i < n*2; i++){
-        for ( j = i+1 ; j < n; j++)
+        for ( j = i+1 ; j < n*2; j++)
         {
             if(c[i]<c[j]){
                 s=c[i];
