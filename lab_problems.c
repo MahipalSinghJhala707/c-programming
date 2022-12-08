@@ -2,7 +2,7 @@
 /*1
 #include<stdio.h>
 int main(){
-    int x=0,i,y,z;
+    int x=-999999,i,y,z;
     printf("Enter the input ;");
     scanf("%d",&i);
     while(i!=-1){
@@ -14,10 +14,10 @@ int main(){
     printf("The largest input you entered is %d",z);
 }
 */
-/*2
+//2
 #include<stdio.h>
 int main(){
-    int x=0,i,y,z;
+    int x=-99999999,i,y,z;
     printf("Enter the input ;");
     scanf("%d",&i);
     while(i!=-1){
@@ -25,8 +25,10 @@ int main(){
             z=x;
             x=i;
         }
+        else if(i>z){
+            z=i;
+        }
         scanf("%d",&i);
     }
     printf("The second largest input you entered is %d",z);
 }
-*/
