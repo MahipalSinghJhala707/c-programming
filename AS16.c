@@ -203,25 +203,24 @@ int fab(){
     scanf("%d",&z);
     x=0;
     y=1;
-    w=0;
-    if (z==1){
-        printf("%d ",x);
-    }
-    else if (z==2){
-        printf("%d",x+1);
-        
-    }
+    w=1;
+
     
-    else {
-        while(w<=z-3){
-            u=x+y;
-            
-            u=x+y;
-            x=y;
-            y=u;
-            w+=1;
-        }printf("%d ",u);
-    }
+
+    while(w<=z){
+        if (w==1){
+            printf("%d ",x);
+            }
+        if(w==2){
+            printf("%d ",x+1);
+        }
+        if(w>=3){
+        u=x+y;
+        x=y;
+        y=u;
+        printf("%d ",u);}
+        w++;
+        }
 }
 */
 
