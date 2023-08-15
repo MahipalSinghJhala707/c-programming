@@ -202,7 +202,7 @@ return 0;
 /*wap to multiply two matrices */
 #include<stdio.h>
 int main(){
-    int a[10][10],b[10][10],c[10][10],n,m,o,p,i,j;
+    int a[10][10],b[10][10],c[10][10],n,m,o,p,i,j,k;
     printf("Enter the number of rows and cloumns for 1st matrix : ");
     scanf("%d%d",&n,&m);
     printf("Enter the number of rows and cloumns for 2nd matrix : ");
@@ -231,7 +231,12 @@ int main(){
     {
         for ( j = 0; j < p; j++)
         {
-            c[i][j]=(a[i][j]*b[i][j]);
+            c[i][j]=0;
+            for ( k = 0; i < p ; k++)
+            {
+                c[i][j]+=a[i][k]*b[k][j];
+            }
+            
         }
         
     }
@@ -240,7 +245,7 @@ int main(){
     {
         for ( j = 0; j < p; j++)
         {
-            printf("%d  ",c[i][j]);
+            printf("%d", c[i][j]);
         }
         printf("\n");
         
