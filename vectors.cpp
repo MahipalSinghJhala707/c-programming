@@ -57,7 +57,25 @@ int main(){
     cout<<endl;
     for(auto it : y)
         cout<<it<<" ";
-
     
+    y.erase(y.begin()+2);
+    y.insert(y.begin(),100);
+    y.insert(y.begin()+2,2,10);
+    vector<int> y2(2,50);
+    y.insert(y.begin(),y2.begin(),y2.end());
+    cout<<endl;
+    for(auto it : y)
+        cout<<it<<"/";
+    cout<<endl;
+    vector<int> y3(2,60);
+    y2.swap(y3);
+    for (auto j : y3)
+        cout<<j<<"_";
+    cout<<endl;
+    y3.swap(y);
+    for (auto j : y3)
+        cout<<j<<"_";
+    y.clear();
+    cout<<endl<<y.empty();
     return 0;
 }
